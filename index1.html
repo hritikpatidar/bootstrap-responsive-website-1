@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <title>bootstrap responsive website 1</title>
+        <style>
+            .r_container {
+                height: auto;
+
+                border: 1px dashed red;
+            }
+
+            .r_row {
+                height: 200px;
+                border: 1px dashed #000;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid r_container">
+                <!-- xs-c hidden -->
+            <h6>row 1, xs-c hidden </h6>
+            <div class="row r_row">
+                <div class="col bg-primary">A</div>
+                <div class="col bg-secondary">B</div>
+                <div class="col bg-success d-none d-sm-block">C</div>
+                <div class="col bg-danger">D</div>
+                <div class="col bg-info">E</div>
+                <div class="col bg-warning">F</div>
+            </div>
+                <!-- row 2,md-C hidden sm-A hidden -->
+            <h6>row 2,md-C hidden sm-A hidden</h6>
+            <div class="row r_row">
+                <div class="col-2 bg-primary d-none d-md-block ">A</div>
+                <div class="col-12 col-md-10 col-sm-12 col-lg-8 col-xl-8 col-xxl-8 bg-secondary">B</div>
+                <div class="col-2 bg-success d-none d-lg-block ">C</div>
+            </div>
+                <!-- row 3,E col only show lg -->
+            <h6>row 3,E col only show lg</h6>
+            <div class="row r_row">
+                <div class="col bg-primary">A</div>
+                <div class="col bg-secondary">B</div>
+                <div class="col bg-success">C</div>
+                <div class="col bg-danger">D</div>
+                <div class="col bg-info d-none d-lg-block d-xl-none">E</div>
+                <div class="col bg-warning">F</div>
+            </div>
+                <!-- a-1,b-1,c-1,d-1,e-1,f-1 xs,sm -->
+            <h6>row 4 , a-1,b-1,c-1,d-1,e-1,f-1 xs,sm</h6>
+            <div class="row r_row">
+                <div class="col-1 bg-primary col-sm-1 col-md-2 ">A</div>
+                <div class="col-1 bg-secondary col-sm-1 col-md-2">B</div>
+                <div class="col-1 bg-success col-sm-1 col-md-2">C</div>
+                <div class="col-1 bg-danger col-sm-1 col-md-2">D</div>
+                <div class="col-1 bg-info col-sm-1 col-md-2">E</div>
+                <div class="col-1 bg-warning col-sm-1 col-md-2">F</div>
+            </div>
+                <!-- A-6,F-6  lg-->
+            <h6>row 5, A-6,F-6  lg</h6>
+            <div class="row r_row">
+                <div class="col bg-primary col-lg-6 col-xl-2 ">A</div>
+                <div class="col bg-secondary d-lg-none d-xl-block">B</div>
+                <div class="col bg-success d-lg-none d-xl-block">C</div>
+                <div class="col bg-danger d-lg-none d-xl-block">D</div>
+                <div class="col bg-info d-lg-none d-xl-block">E</div>
+                <div class="col bg-warning col-lg-6 col-xl-2">F</div>
+            </div>
+                <!-- A-3,B-3 xl -->
+            <h6>row 6 ,A-3,B-3 xl</h6>
+            <div class="row r_row">
+                <div class="col bg-primary col-xl-3 col-xxl-2">A</div>
+                <div class="col bg-secondary col-xl-3 col-xxl-2">B</div>
+                <div class="col bg-success d-xl-none d-xxl-block">C</div>
+                <div class="col bg-danger d-xl-none  d-xxl-block">D</div>
+                <div class="col bg-info d-xl-none  d-xxl-block">E</div>
+                <div class="col bg-warning d-xl-none  d-xxl-block">F</div>
+            </div>
+                <!-- A-2,B-8,F-2  md -->
+            <h6>row 7 , A-2,B-8,F-2  md</h6>
+            <div class="row r_row">
+                <div class="col bg-primary col-md-2 col-lg-2">A</div>
+                <div class="col bg-secondary col-md-8 col-lg-2">B</div>
+                <div class="col bg-success d-md-none d-lg-block">C</div>
+                <div class="col bg-danger d-md-none d-lg-block">D</div>
+                <div class="col bg-info d-md-none d-lg-block">E</div>
+                <div class="col bg-warning col-md-2 col-lg-2">F</div>
+            </div>
+                <!-- A-12 xxl -->
+            <h6>row 8, A-12 xxl</h6>
+            <div class="row r_row">
+                <div class="col bg-primary col-xxl-12">A</div>
+                <div class="col bg-secondary d-xxl-none">B</div>
+                <div class="col bg-success d-xxl-none">C</div>
+                <div class="col bg-danger d-xxl-none">D</div>
+                <div class="col bg-info d-xxl-none">E</div>
+                <div class="col bg-warning d-xxl-none">F</div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
